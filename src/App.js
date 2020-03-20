@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Router from './components/router'
 // import Button from 'bootstrap';
 
 function App() {
@@ -11,14 +12,13 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
        
           Learn Pitkiot :)
         
-      </header>
-      <input type="button" value="Click me" onclick="this.msg()"></input>
-      {/* <input class="btn btn-primary" type="button" value="Input"></input> */}
+      </header> */}
+      <Router></Router>
     </div>
   );
 
