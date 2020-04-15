@@ -1,13 +1,13 @@
 import React from 'react';
 
-class Rules extends React.Component{
+class Start extends React.Component{
 
 render(){
   return (
     <div>
-        my rules
+        my start
     </div>
   );
 }}
 
-export default Rules;
+export default Start;

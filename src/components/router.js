@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './home';
-import Rules from './rules';
+import Configuration from './configuration';
+import Start from './start';
 import { HashRouter, Route} from 'react-router-dom';
 
 class Router extends React.Component{
@@ -10,7 +11,8 @@ render(){
     <HashRouter>
     <div>
         <Route exact path="/" component={Home} />
-        <Route exact path="/Rules" component={Rules} />
+        <Route exact path="/Configuration" component={Configuration} />
+        <Route exact path="/Start" component={Start} />
     </div>
     </HashRouter>
   );

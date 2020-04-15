@@ -6,7 +6,10 @@ class Home extends React.Component{
 render(){
 
     return (
-            <Link to="/Rules">Rules</Link>
+        <div>
+            <Link to="/configuration">start new game</Link><br></br>
+            <Link to="/Start">join an existing game</Link>
+        </div>
         );
     }
 }
