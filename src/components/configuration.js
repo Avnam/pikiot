@@ -1,5 +1,5 @@
 import React from 'react';
-import Rules from './compTypes/rules';
+import Config from './compTypes/config';
 
 class Configuration extends React.Component{
 gameTypeOptions = [
@@ -15,7 +15,7 @@ gameTypeOptions = [
 
 skipOptions = [
   {
-    value: "yeah right",
+    value: "yeah rights",
     id:0
   },
   {
@@ -24,17 +24,21 @@ skipOptions = [
   }
 ]
 render(){
+  // debugger;
   return (
     <div>
-       <Rules 
+       <Config 
+        title="game type"
         underlineText="choose a game type"
         options={this.gameTypeOptions}
        >
-       </Rules>
+       </Config>
        <br/>
-       <Rules underlineText="skip options"
+       <Config 
+        title="name"
+        underlineText="skip options"
         options={this.skipOptions}
-        ></Rules>
+        ></Config>
     </div>
   );
 }}

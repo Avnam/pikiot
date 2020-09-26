@@ -7,7 +7,7 @@ import Select from '@material-ui/core/Select';
 import NativeSelect from '@material-ui/core/NativeSelect';
 
 
-class Rules extends React.Component{
+class Config extends React.Component{
   constructor(props){
     super(props);
     this.state = {
@@ -29,7 +29,7 @@ handleChange = (event) => {
 render(){
   return (
       <FormControl className={'formControl'}>
-      <InputLabel htmlFor="age-native-helper">Name</InputLabel>
+      <InputLabel htmlFor="age-native-helper">{this.props.title}</InputLabel>
       <NativeSelect
         value={this.state.age}
         onChange={this.handleChange}
@@ -50,4 +50,4 @@ render(){
   );
 }}
 
-export default Rules;
+export default Config;
