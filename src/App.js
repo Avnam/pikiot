@@ -1,14 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Router from './components/router'
 // import Button from 'bootstrap';
 
 function App() {
 
-  function msg() {
-    return 12;
-  }
+  // function msg() {
+  //   return 12;
+  // }
 
   return (
     <div className="App">
